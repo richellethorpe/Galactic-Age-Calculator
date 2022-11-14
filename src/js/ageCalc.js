@@ -12,4 +12,8 @@ export default class AgeCalc {
   venusCalculation() {
     this.userAge = Math.round(this.userAge / .62);
   }
+  marsCalcuation() {
+    
+  }
+
 }

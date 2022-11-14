@@ -18,7 +18,13 @@ describe (`AgeCalc`, () => {
     let newPlanet2 = new AgeCalc("venus", 36)
     newPlanet2.venusCalculation()
     expect(newPlanet2.userAge).toEqual(58);
-    })
+    }) 
+
+  test(`should correctly create an age based on user age input to calculate this age on mars`, () => {
+    let newPlanet3 = new AgeCalc("mars", 36)
+    newPlanet3.marsCalcuation()
+    expect(newPlanet3.userAge).toEqual(19);
+  })
 
   });
 
