@@ -4,31 +4,35 @@ export default class AgeCalc {
     this.userAge = userAge;
     this.userLifeExpectancy= userLifeExpectancy;
     this.lifeLeft = 0
+    this.lifePostExpectancy=0
 
   }
 
   mercuryCalculation() {
     this.userAge = Math.round(this.userAge / .24);
-    this.lifeLeft = (Math.round(this.userLifeExpectancy /.24) - this.userAge);
+    this.lifeLeft = Math.round(this.userLifeExpectancy /.24);
     
   }
 
   venusCalculation() {
     this.userAge = Math.round(this.userAge / .62);
-    this.lifeLeft = (Math.round(this.userLifeExpectancy /.62) - this.userAge);
+    this.userLifeExpectancy =Math.round(this.userLifeExpectancy/ .62);
   }
 
   marsCalcuation() {
     this.userAge = Math.round(this.userAge /1.88);
-    this.lifeLeft =(Math.round(this.userLifeExpectancy/ 1.88) - this.userAge);
+    this.userLifeExpectancy =Math.round(this.userLifeExpectancy/ 1.88);
   }
   
   jupiterCalculation() {
     this.userAge = Math.round(this.userAge / 11.86);
-    this.lifeLeft =(Math.round(this.userLifeExpectancy/ 11.86) - this.userAge);
+    this.userLifeExpectancy =Math.round(this.userLifeExpectancy/ 11.86);
   }
 
-  lifeToLive() {
-    this.lifeLeft = this.userLifeExpectancy - this.userAge;
+
+
+  yearsPastExpectancy() {
+
   }
+
 }

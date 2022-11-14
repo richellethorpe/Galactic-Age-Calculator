@@ -32,36 +32,42 @@ describe (`AgeCalc`, () => {
     expect(newPlanet4.userAge).toEqual(3);
   })
 
-  test(`should correctly calculate baseline life to live if user is on earth`, () => {
-    let planetEarth = new AgeCalc("earth", 36, 90)
-    planetEarth.lifeToLive()
-    expect(planetEarth.lifeLeft).toEqual(54);
-  })
 
-  test(`should correctly calculate the life to to live if the user is on Mercury`, () => {
+  test(`should correctly calculate the life expectancy if the user is on Mercury`, () => {
     let newPlanet = new AgeCalc("mercury", 36, 90)
     newPlanet.mercuryCalculation()
     expect(newPlanet.lifeLeft).toEqual(225)
   })
 
-  test(`should correctly calculate the life to to live if the user is on Venus`, () => {
+  test(`should correctly calculate the life expectancy if the user is on Venus`, () => {
     let newPlanet = new AgeCalc("venus", 36, 90)
     newPlanet.venusCalculation()
     expect(newPlanet.lifeLeft).toEqual(87)
   })
 
-  test(`should correctly calculate the life to to live if the user is on Mars`, () => {
+  test(`should correctly calculate the life expectancy if the user is on Mars`, () => {
     let newPlanet = new AgeCalc("mars", 36, 90)
     newPlanet.marsCalcuation()
     expect(newPlanet.lifeLeft).toEqual(29);
   })
 
-  test(`should correctly calculate the life to to live if the user is on Jupiter`, () => {
+  test(`should correctly calculate the life expectancy if the user is on Jupiter`, () => {
     let newPlanet = new AgeCalc("jupiter", 36, 90)
     newPlanet.jupiterCalculation()
     expect(newPlanet.lifeLeft).toEqual(5);
   })
 
+  test(`should correctly calculate the life expectancy if the user is on Jupiter`, () => {
+    let newPlanet = new AgeCalc("jupiter", 36, 90)
+    newPlanet.jupiterCalculation()
+    expect(newPlanet.lifeLeft).toEqual(5);
   })
+
+  // test(`should return number of years user has lived past life expectancy if their age input is greater than expectancy`, () => {
+  //   let newUser = new AgeCalc("jupiter", 91, 90)
+  //   newUser.yearsPastExpectancy()
+  //   expect()
+
+  // })
 
 //
