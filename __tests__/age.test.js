@@ -44,6 +44,12 @@ describe (`AgeCalc`, () => {
     expect(newPlanet.lifeLeft).toEqual(225)
   })
 
+  test(`should correctly calculate the life to to live if the user is on Venus`, () => {
+    let newPlanet = new AgeCalc("venus", 36, 90)
+    newPlanet.venusCalculation()
+    expect(newPlanet.lifeLeft).toEqual(87)
+  })
+
   });
 
 //no
