@@ -30,6 +30,7 @@ export default class AgeCalc {
   }
 
   yearsExpectancy() {
+    this.lifeLeft = this.userLifeExpectancy - this.userAge;
 
   }
 
