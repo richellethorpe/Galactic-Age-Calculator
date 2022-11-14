@@ -9,6 +9,7 @@ export default class AgeCalc {
 
   mercuryCalculation() {
     this.userAge = Math.round(this.userAge / .24);
+    
   }
 
   venusCalculation() {

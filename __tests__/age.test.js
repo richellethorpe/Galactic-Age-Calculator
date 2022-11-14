@@ -38,6 +38,12 @@ describe (`AgeCalc`, () => {
     expect(planetEarth.lifeLeft).toEqual(54);
   })
 
+  test(`should correctly calculate the life to to live if the user is on Mercury`, () => {
+    let newPlanet = new AgeCalc("mercury", 36, 90)
+    newPlanet.mercuryCalculation()
+    expect(newPlanet.lifeLeft).toEqual(225)
+  })
+
   });
 
 //
