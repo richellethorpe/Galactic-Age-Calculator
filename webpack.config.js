@@ -19,7 +19,7 @@ module.exports = {
       verbose: true
     }), // new line
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Galactic Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
