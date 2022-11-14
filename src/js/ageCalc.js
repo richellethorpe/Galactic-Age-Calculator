@@ -27,4 +27,4 @@ export default class AgeCalc {
   lifeToLive() {
     this.lifeLeft = this.userLifeExpectancy - this.userAge;
   }
-}
+};
