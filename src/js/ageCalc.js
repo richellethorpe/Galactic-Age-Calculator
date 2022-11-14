@@ -3,7 +3,7 @@ export default class AgeCalc {
     this.planet = planet;
     this.userAge = userAge;
     this.userLifeExpectancy= userLifeExpectancy;
-    this.lifeToLive = 0
+    this.lifeLeft = 0
 
   }
 
