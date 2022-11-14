@@ -19,7 +19,8 @@ export default class AgeCalc {
   }
 
   marsCalcuation() {
-    this.userAge = Math.round(this.userAge /1.88)
+    this.userAge = Math.round(this.userAge /1.88);
+    this.lifeLeft =(Math.round(this.userLifeExpectancy/ 1.88) - this.userAge);
   }
   
   jupiterCalculation() {
