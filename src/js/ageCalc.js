@@ -25,6 +25,7 @@ export default class AgeCalc {
   
   jupiterCalculation() {
     this.userAge = Math.round(this.userAge / 11.86);
+    this.lifeLeft =(Math.round(this.userLifeExpectancy/ 11.86) - this.userAge);
   }
 
   lifeToLive() {
