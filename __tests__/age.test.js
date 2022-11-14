@@ -62,6 +62,7 @@ describe (`AgeCalc`, () => {
     newPlanet.userAge = 50
     newPlanet.userLifeExpectancy = 90
     newPlanet.yearsExpectancy()
-    expect(newPlanet.lifeLeft).toEqual(40)
+    expect(newPlanet.lifeLeft).toEqual(40);
   })
 })
+
