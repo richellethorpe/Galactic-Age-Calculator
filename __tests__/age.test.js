@@ -52,10 +52,10 @@ describe (`AgeCalc`, () => {
 
   test(`should correctly calculate the life to to live if the user is on Mars`, () => {
     let newPlanet = new AgeCalc("mars", 36, 90)
-    newPlanet.venusCalculation()
+    newPlanet.marsCalcuation()
     expect(newPlanet.lifeLeft).toEqual(29);
   })
 
-  });
+  })
 
 //no
