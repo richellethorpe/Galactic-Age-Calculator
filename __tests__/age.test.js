@@ -7,6 +7,13 @@ describe (`AgeCalc`, () => {
     expect(ageCalc.userAge).toEqual(36);
     expect(ageCalc.userLifeExpectancy).toEqual(90);
   });
-});
+
+  test(`should correctly create an age based on user age input to calculate their age on mercury`, () => {
+    let newPlanet = new AgeCalc("mercury", 36)
+    newPlanet.mercuryCalculation()
+    expect(newPlanet.userAge).toEqual(150);
+    })
+  });
+
 
 //it will check

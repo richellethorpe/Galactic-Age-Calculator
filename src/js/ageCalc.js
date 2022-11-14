@@ -4,4 +4,8 @@ export default class AgeCalc {
     this.userAge = userAge;
     this.userLifeExpectancy= userLifeExpectancy;
   }
+
+  mercuryCalculation() {
+    
+  }
 }
