@@ -4,7 +4,7 @@ export default class AgeCalc {
     this.userAge = userAge;
     this.userLifeExpectancy= userLifeExpectancy;
     this.lifeLeft = 0
-    this.lifePostExpectancy=0
+  
 
   }
 
@@ -29,9 +29,7 @@ export default class AgeCalc {
     this.userLifeExpectancy =Math.round(this.userLifeExpectancy/ 11.86);
   }
 
-
-
-  yearsPastExpectancy() {
+  yearsExpectancy() {
 
   }
 
