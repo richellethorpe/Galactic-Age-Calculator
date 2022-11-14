@@ -1,0 +1,3 @@
+node_modules/
+.DS_Store // only include this if you are on a Macgit commit -m "add .gitignore file to project"
+dist/
