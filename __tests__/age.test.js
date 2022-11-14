@@ -32,6 +32,12 @@ describe (`AgeCalc`, () => {
     expect(newPlanet4.userAge).toEqual(3);
   })
 
+  test(`should correctly calculate baseline life to live if user is on earth`, () => {
+    let planetEarth = new AgeCalc("earth", 36, 90)
+    planetEarth.lifeLeft()
+    expect(planetEarth.lifeToLive).toEqual(54);
+  })
+
   });
 
 //it will check s
