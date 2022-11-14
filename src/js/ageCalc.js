@@ -18,7 +18,7 @@ export default class AgeCalc {
   }
   
   jupiterCalculation() {
-    
+    this.userAge = Math.round(this.userAge / 11.86);
   }
 
 
