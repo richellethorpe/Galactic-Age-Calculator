@@ -15,6 +15,7 @@ export default class AgeCalc {
 
   venusCalculation() {
     this.userAge = Math.round(this.userAge / .62);
+    this.lifeLeft = (Math.round(this.userLifeExpectancy /.62) - this.userAge);
   }
 
   marsCalcuation() {
@@ -28,4 +29,4 @@ export default class AgeCalc {
   lifeToLive() {
     this.lifeLeft = this.userLifeExpectancy - this.userAge;
   }
-};
+}
