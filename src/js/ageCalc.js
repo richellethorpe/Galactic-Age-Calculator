@@ -31,9 +31,11 @@ export default class AgeCalc {
   yearsExpectancy() {
     
     if (this.userAge < this.userLifeExpectancy){
-      return this.lifeLeft = this.userLifeExpectancy - this.userAge;
-     }else if (this.age > this.userLifeExpectancy) {
-    return lifePast = Math.abs(this.age - this.userLifeExpectancy)
+      this.lifeLeft = this.userLifeExpectancy - this.userAge;
+      return this.lifeLeft
+     }else {
+      this.lifeLeft = Math.abs(this.userAge - this.userLifeExpectancy)
+      return this.lifeLeft
   }
   }
 }
