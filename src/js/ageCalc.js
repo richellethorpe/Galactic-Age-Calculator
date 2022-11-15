@@ -4,9 +4,7 @@ export default class AgeCalc {
     this.userAge = userAge;
     this.userLifeExpectancy= userLifeExpectancy;
     this.lifeLeft = 0
-    this.lifePast
-  
-
+    
   }
 
   mercuryCalculation() {
@@ -31,9 +29,13 @@ export default class AgeCalc {
   }
 
   yearsExpectancy() {
+    
     if (this.userAge < this.userLifeExpectancy){
       return this.lifeLeft = this.userLifeExpectancy - this.userAge;
+     }else if (this.age > this.userLifeExpectancy) {
+    return lifePast = Math.abs(this.age - this.userLifeExpectancy)
+  }
   }
 }
-}
+
 
