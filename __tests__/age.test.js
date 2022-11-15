@@ -65,12 +65,12 @@ describe (`AgeCalc`, () => {
     expect(newPlanet.lifeLeft).toEqual(40);
   })
 
-  test(`should correctly calculate the amount of life the user has lived past their expectancy if they are older than the predicted life expectancy and return string with "Wow! You have lived (lifeLeft value) years past your life expectancy"`, () => {
+  test(`should correctly calculate the amount of life the user has lived past their expectancy if they are older than the predicted life`, () => {
     let newPlanet = new AgeCalc()
     newPlanet.userAge = 95
     newPlanet.userLifeExpectancy = 90
     newPlanet.yearsExpectancy()
-    expect(newPlanet.lifeLeft).toEqual("Wow! You have lived 5 years past your life expectancy");
+    expect(newPlanet.lifeAfter).toEqual(5);
   })
 })
 
